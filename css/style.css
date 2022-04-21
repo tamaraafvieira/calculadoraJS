@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu+Mono&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+    /* background-image: linear-gradient(20deg, #FFA500, #FF6347, #FF4500); */
+    background-image: url("https://i.pinimg.com/originals/0f/36/ba/0f36bab8870ab3228e4875acd7231ff0.jpg");
+    height: 100vh;     
+    background-size: cover;
+    
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 5%;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#titulocalculadora{
+    text-align: center;
+}
+
+.resultado{
+    background-color: white;
+    width: 92%;
+    height: 30px;
+    margin: 3% auto;    
+    font-size: 20px;
+    color: #8b0000;
+    opacity: 0.88;
+    font-weight: bold;
+    text-align: right;
+    padding: 2%;   
+    border-color: 2px;
+    border-radius: 5px;
+
+
+}
+
+.calculadora{
+    position: absolute;
+    border: 3px solid #8b00001e;   
+    border-width: 10px;
+    /* background-color: #e95427; */
+    background-image: url("https://wallpaperaccess.com/full/2570556.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;   
+    padding: 10px;
+    
+}
+
+.botao{
+    background-color: #b8390385;
+    border: 1px solid #8b000033;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: all 0.1s linear;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: #b8390385;
+
+}
+
+.botaoalt {
+    height: 105px;
+}
+
+.botaolarg {
+    width: 105px;
+}
