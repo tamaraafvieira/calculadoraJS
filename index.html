@@ -9,45 +9,50 @@
     <link href="./css/style.css" rel="stylesheet">    
 </head>
 <body>
-   <div class="fundo">
-       <div class="titulo">
-        <h1>Calculadora da Tamara</h1>
-       </div>        
-        <div class="calculadora titulo">
-            <h1 id="titulocalculadora">Calculadora</h1>
-            <p class="resultado" id="resultado"> </p>
-            <table>
-                <tr>
-                    <td><button class="botao" id="limpar">C</button></td>
-                    <td><button class="botao" id="del">Del</button></td>
-                    <td><button class="botao inserir">/</button></td>
-                    <td><button class="botao inserir">*</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao inserir">7</button></td>
-                    <td><button class="botao inserir">8</button></td>
-                    <td><button class="botao inserir">9</button></td>
-                    <td><button class="botao inserir">-</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao inserir">4</button></td>
-                    <td><button class="botao inserir">5</button></td>
-                    <td><button class="botao inserir">6</button></td>
-                    <td><button class="botao inserir">+</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao inserir">1</button></td>
-                    <td><button class="botao inserir">2</button></td>
-                    <td><button class="botao inserir">3</button></td>
-                    <td rowspan="2"><button class="botao botaoalt" id="calcular">=</button></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button class="botao botaolarg inserir">0</button></td>
-                    <td><button class="botao inserir">.</button></td>               
-                </tr>
-            </table>
+    <div class="container">
+        <div class=" row fundo">
+            <div class=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="titulo">
+                    <h1>Calculadora da Tamara</h1>
+                </div>        
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 calculadora titulo">
+                    <h1 id="titulocalculadora">Calculadora</h1>
+                    <p class="resultado" id="resultado"> </p>
+                    <table>
+                        <tr>
+                            <td><button class="botao" id="limpar">C</button></td>
+                            <td><button class="botao" id="del">Del</button></td>
+                            <td><button class="botao inserir">/</button></td>
+                            <td><button class="botao inserir">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="botao inserir">7</button></td>
+                            <td><button class="botao inserir">8</button></td>
+                            <td><button class="botao inserir">9</button></td>
+                            <td><button class="botao inserir">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="botao inserir">4</button></td>
+                            <td><button class="botao inserir">5</button></td>
+                            <td><button class="botao inserir">6</button></td>
+                            <td><button class="botao inserir">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="botao inserir">1</button></td>
+                            <td><button class="botao inserir">2</button></td>
+                            <td><button class="botao inserir">3</button></td>
+                            <td rowspan="2"><button class="botao botaoalt" id="calcular">=</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="botao botaolarg inserir">0</button></td>
+                            <td><button class="botao inserir">.</button></td>               
+                        </tr>
+                    </table>
+                </div>
+            </div>            
         </div>
-   </div>     
+    </div>
+        
    <script src="./js/jquery-3.6.0.min.js"></script>
    <script src="./js/index.js"></script>
 </body>
