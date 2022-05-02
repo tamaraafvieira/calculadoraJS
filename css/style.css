@@ -7,10 +7,14 @@
     padding: 0;
 }
 
+html, body, div.container {
+    height: 100%;
+}
+
 .fundo{
     /* background-image: linear-gradient(20deg, #FFA500, #FF6347, #FF4500); */
     background-image: url("https://i.pinimg.com/originals/0f/36/ba/0f36bab8870ab3228e4875acd7231ff0.jpg");
-    height: 100vh;     
+    height: 100%;     
     background-size: cover;
     
 }
@@ -18,6 +22,7 @@
 .titulo{
     text-align: center;
     padding-top: 5%;
+    padding-bottom: 10%;
     color: #fff;
     font-family: Roboto;
     font-weight: 400;
@@ -42,7 +47,29 @@
     border-color: 2px;
     border-radius: 5px;
 
+}
 
+#historico{   
+    width: 226px;
+    height: 250px;
+    top: 62%;
+    position: absolute;
+    border: 3px solid #8b00001e;   
+    border-width: 10px;
+    /* background-color: #e95427; */
+    background-image: url("https://wallpaperaccess.com/full/2570556.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;   
+    padding: 10px;
+    display: none; /* para poder esconder essa div */
+    overflow: scroll;
+    color: #FFF;
+    font-style: bold;
+    font-size: large;
 }
 
 .calculadora{
@@ -66,6 +93,22 @@
     background-color: #b8390385;
     border: 1px solid #8b000033;
     width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: all 0.1s linear;
+}
+.botaohistorico{
+    background-color: #b8390385;
+    border: 1px solid #8b000033;
+    width: 150px;
     height: 50px;
     font-size: 25px;
     border-radius: 10px;

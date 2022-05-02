@@ -12,11 +12,21 @@ $(document).ready(function (){
     })
 
     $('#calcular').on('click', function(){
-        calcular();
+        calcular();        
+    })
+    // O show faz o display block
+    $('#historico-botao').on('click', function(){
+        $('#historico').show(); //O show vai sobrepor com o display block o display none
+    })
+    /*Agora ele vai fechar, pego o #historico e especifico que é um button 
+    com a classe botao (.botao), pq se tiver outros buttons ele pega a classe botao (> é que é filho) 
+    - to dando um display block*/
+    $('#historico>button.botao').on('click', function(){
+        $('#historico').hide(); //O hide tira o display block adicionando o display none
     })
 })
-
-
+  
+  
 function insert(numeroInserido){
     var numeroNaCalculadora = $('#resultado').html();  
     var resultado = numeroNaCalculadora.substring(numeroNaCalculadora.length -1);
@@ -64,14 +74,21 @@ function del(){
 }
 
 function calcular(){
-    var resultado = $('#resultado').html();
+    var resultado = $('#resultado').html(); //O .html substitui o HTML existente
     if(resultado) {
-        $('#resultado').html(eval(resultado));
+        var soma = eval(resultado);
+        $('#resultado').html(soma); //está fazendo o calculo (eval) e mostrando 
+        //Aqui estou usando o HTML entro do HTML (append)
+        //$('#historico').append("<div>" + resultado + " = " + soma +  "</div>"); 
+        $('#historico').append(`<div>${resultado} = ${soma}</div>`); 
+        // O append não substitui como o .html, ele mantem o que já existe e adiciona o HTML
     }
     else{
         $('#resultado').html("Digite algum valor");
-    }
-}
+    }    
+} 
+
+
 
 
 /*function insert(num){
