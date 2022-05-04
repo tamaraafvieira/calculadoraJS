@@ -1,6 +1,6 @@
 $(document).ready(function (){
     $('.inserir').on('click', function(){     
-        insert($(this).html());        
+        insert($(this).html());                
     })
 
     $('#limpar').on('click', function(){
@@ -12,7 +12,8 @@ $(document).ready(function (){
     })
 
     $('#calcular').on('click', function(){
-        calcular();        
+        calcular();
+                
     })
     // O show faz o display block
     $('#historico-botao').on('click', function(){
@@ -40,6 +41,7 @@ function insert(numeroInserido){
         
     }
     $('#resultado').html(numeroNaCalculadora + '' + numeroInserido);
+    
 }
 
 function verificaOperador(parametro){
@@ -55,6 +57,9 @@ function verificaOperador(parametro){
             isOperador = true;
             break;
         case "/":
+            isOperador = true;
+            break;
+        case ".":
             isOperador = true;
             break;    
         default: 
@@ -85,8 +90,21 @@ function calcular(){
     }
     else{
         $('#resultado').html("Digite algum valor");
-    }    
-} 
+    }
+    
+}
+
+// function ponto(text){
+//     let resultado = $('#resultado').html('resultado').textContent;
+//     const ponto1 = resultado;
+//     const ponto2 = ponto1.charAt(ponto1.length -1);
+    
+//     if(ponto2 == '.' & text == '.') {
+//         del();
+//     }
+//     console.log(ponto);
+//}
+
 
 
 
