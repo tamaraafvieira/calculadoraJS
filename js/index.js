@@ -1,4 +1,7 @@
-$(document).ready(function (){
+// o ready é pq a página precisa estar pronta para ser carregada. 
+//Ele roda uma vez o DOM e está pronto para deixar o JS ser carregado.
+// o "on" anexa "manipuladores de eventos"
+$(document).ready(function (){ 
     $('.inserir').on('click', function(){     
         insert($(this).html());                
     })
